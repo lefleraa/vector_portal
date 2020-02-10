@@ -1,0 +1,43 @@
+{
+  "name": "vector_portal",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "classnames": "^2.2.6",
+    "lodash-es": "^4.17.15",
+    "moment": "^2.24.0",
+    "prop-types": "^15.7.2",
+    "react": "^16.12.0",
+    "react-bootstrap": "^0.32.1",
+    "react-dom": "^16.12.0",
+    "react-scripts": "3.2.0"
+  },
+  "devDependencies": {
+    "prettier": "1.18.2",
+    "uui_kit": "git+ssh://git@github.com/VectorLearning/uui_kit.git"
+  },
+  "scripts": {
+    "start:full": "npm run prettier && npm run start",
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "prettier": "prettier --trailing-comma es5 --single-quote true --use-tabs false --tab-width 2 --write 'src/**/*.{js,jsx}'",
+    "lessc": "node_modules/.bin/lessc src/static/stylesheets/less/App.less src/static/stylesheets/_css/App.css"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
